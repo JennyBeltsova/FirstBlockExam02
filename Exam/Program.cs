@@ -12,6 +12,9 @@ Console.WriteLine();
 int newArrLength = GetNewArrayLength(baseArray, SEARCHED_LENGTH);
 string[] newArr = GetFilteredArray(baseArray, SEARCHED_LENGTH, newArrLength);
 
+Console.WriteLine($"Отфильтруем строки длиной не более {SEARCHED_LENGTH} символов" );
+Console.WriteLine("Результирующий массив:");
+
 Console.WriteLine("[" + string.Join(", ", newArr) + "]");
 Console.WriteLine();
 
