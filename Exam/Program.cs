@@ -2,13 +2,15 @@
 // меньше либо равна 3 ссимвола. Первоначальный массив можно ввести с клавиатуры, либо задать на старте выполнения алгоритма.
 // При решении не рекомендуется пользоваться коллекциями, лучше обойтись исключительно массивами.
 
+const int SEARCHED_LENGTH = 3;
+
 Console.WriteLine();
 Console.WriteLine("Исходный массив:");
 string[] baseArray = {"hello", "2", "world", ":-)"};
 Console.WriteLine("[" + string.Join(", ", baseArray) + "]");
 Console.WriteLine();
-int newArrLength = GetNewArrayLength(baseArray, 3);
-string[] newArr = GetFilteredArray(baseArray, 3, newArrLength);
+int newArrLength = GetNewArrayLength(baseArray, SEARCHED_LENGTH);
+string[] newArr = GetFilteredArray(baseArray, SEARCHED_LENGTH, newArrLength);
 
 Console.WriteLine("[" + string.Join(", ", newArr) + "]");
 Console.WriteLine();
